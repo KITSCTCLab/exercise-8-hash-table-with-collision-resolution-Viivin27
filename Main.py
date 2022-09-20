@@ -3,9 +3,14 @@ import re
 def display_hash(hashtable) -> None:
 	for i in range(len(hashtable)):
 		print(i, end=" ")
-
+		for j in hashtable[i]:
 			print("-->", j, end=" ")
 		print()
+
+
+def Hashing(keyvalue) -> int:
+	return keyvalue % len(HashTable)
+
 
 
 
@@ -25,3 +30,4 @@ for item in re.split('], |].', input_data):
     insert(HashTable, int(data[0]), data[1])
 
 display_hash (HashTable)
+asjdlkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk;
