@@ -11,6 +11,9 @@ def display_hash(hashtable) -> None:
 def Hashing(keyvalue) -> int:
 	return keyvalue % len(HashTable)
 
+def insert(Hashtable, keyvalue, value) -> None:
+	Hashtable[keyvalue % len(Hashtable)].append(value)
+	
 
 
 
@@ -30,4 +33,3 @@ for item in re.split('], |].', input_data):
     insert(HashTable, int(data[0]), data[1])
 
 display_hash (HashTable)
-asjdlkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk;
